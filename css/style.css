@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Bai Jamjuree;
+    src: url(../fonts/BaiJamjuree-Regular.ttf);
+}
+
+:root {
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+    --primary-font: Bai Jamjuree;
+    --primary-font-size: 1.125rem;
+    --headers-fw: 600;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
