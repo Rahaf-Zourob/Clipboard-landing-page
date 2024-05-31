@@ -7,9 +7,10 @@
     --strong-cyan: hsl(171, 66%, 44%);
     --light-blue: hsl(233, 100%, 69%);
     --dark-grayish-blue: hsl(210, 10%, 33%);
-    --grayish-blue: hsl(201, 11%, 66%);
+    --grayish-blue: rgb(159, 171, 178);
+    --grayish-blue-t: rgba(159, 171, 178, 0.218);
     --primary-font: Bai Jamjuree;
-    --primary-font-size: 1.125rem;
+    --primary-font-size-sm: 1.125rem;
     --headers-fw: 600;
 }
 
@@ -17,4 +18,197 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: var(--primary-font);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sec__margin {
+    margin-bottom: 8rem;
+}
+
+header .container h1,
+main section.container h2 {
+    margin-bottom: 1rem;
+}
+
+:is(header div.container, main section) p {
+    color: var(--grayish-blue);
+    font-size: var(--primary-font-size-sm);
+    width: 62.5%;
+}
+
+header .header__backgroud {
+    background-image: url(../images/bg-header-desktop.png);
+    height: 15rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+header .container h1 {
+    font-weight: var(--headers-fw);
+    font-size: 2.5rem;
+}
+
+:is(header .container, main section#section5) p {
+    margin: 0 auto 2.2rem;
+}
+
+.download__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.download__links a {
+    color: white;
+    display: block;
+    border-radius: 1.5rem;
+    padding: .8rem 1.8rem;
+    font-size: var(--primary-font-size-sm);
+}
+
+.download__links a.download__ios {
+    background-color: var(--strong-cyan);
+}
+
+.download__links a.download__mac {
+    background-color: var(--light-blue);
+}
+
+main section#section1 .track__snippets {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: -10.5rem;
+}
+
+main :is(section#section1, section#section3) p {
+    margin: 0 auto 3rem;
+}
+
+main section#section1 .track__snippets .snippts__content {
+    text-align: left;
+    width: 32%;
+    margin-top: 3.5rem;
+}
+
+main section#section1 .track__snippets .snippts__content h3 {
+    margin-top: 4rem;
+    letter-spacing: .1rem;
+}
+
+main section#section1 .track__snippets .snippts__content p {
+    margin: 0;
+    width: 100%;
+}
+
+main section#section2 p {
+    margin: 0 auto 3.5rem;
+}
+
+main section#section3 .workflow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main section#section3 .workflow .workflow__content {
+    width: 30%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+main section#section3 .workflow .workflow__content .icon__logo{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+main section#section3 .workflow .workflow__content p {
+    margin: 0;
+    width: 100%;
+    font-size: 1rem
+}
+
+main section#section4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main section#section4 a {
+    display: block;
+}
+
+footer {
+    padding: 2rem 0;
+    background-color: var(--grayish-blue-t);
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+}
+
+footer .container .socialmedia__links ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .container .footer__logo img {
+    width: 50%;
+}
+
+footer .container .links__lists {
+    width: 80%;
+    display: flex;
+}
+
+footer .container div:nth-child(odd) {
+    width: 10%;
+}
+
+footer .container .links__lists ul {
+    width: 20%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer .attribution {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+footer .attribution a {
+    color: var(--dark-grayish-blue);
+}
+
+footer .attribution a:hover {
+    text-decoration: underline;
 }
